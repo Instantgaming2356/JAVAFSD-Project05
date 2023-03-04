@@ -16,3 +16,5 @@ VOLUME /tmp
 EXPOSE 80
 
 ENTRYPOINT ["java","-jar","target/SportyShoes-0.0.1-SNAPSHOT.jar"]
+
+CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
